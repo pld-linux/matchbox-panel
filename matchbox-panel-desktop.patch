@@ -1,0 +1,98 @@
+--- matchbox-panel-0.9.3/applets/dotdesktop/mb-applet-battery.desktop.orig	2005-10-03 00:06:57.000000000 +0200
++++ matchbox-panel-0.9.3/applets/dotdesktop/mb-applet-battery.desktop	2006-12-27 04:06:28.420700478 +0100
+@@ -1,8 +1,12 @@
+ [Desktop Entry]
++Encoding=UTF-8
+ Name=Battery Monitor
++Name[pl]=Monitor baterii
+ Comment=Panel based Battery Monitor
++Comment[pl]=Siedzący w panelu monitor baterii
+ Exec=mb-applet-battery
+ Type=PanelApp
++Terminal=false
+ Icon=miniapm.png
+-Categories=Panel;Utility;MB
+-
++Categories=Applet;Utility;
++# vi:encoding=utf-8
+--- matchbox-panel-0.9.3/applets/dotdesktop/mb-applet-clock.desktop.orig	2005-10-03 00:06:57.000000000 +0200
++++ matchbox-panel-0.9.3/applets/dotdesktop/mb-applet-clock.desktop	2006-12-27 04:06:01.143146019 +0100
+@@ -1,7 +1,12 @@
+ [Desktop Entry]
++Encoding=UTF-8
+ Name=Clock
++Name[pl]=Zegar
+ Comment=Panel based clock
++Comment[pl]=Zegar siedzący w panelu
+ Exec=mb-applet-clock
+ Type=PanelApp
++Terminal=false
+ Icon=minitime.png
+-Categories=Panel;Utility;MB
++Categories=Applet;Utility;
++# vi:encoding=utf-8
+--- matchbox-panel-0.9.3/applets/dotdesktop/mb-applet-menu-launcher.desktop.orig	2005-10-03 00:06:57.000000000 +0200
++++ matchbox-panel-0.9.3/applets/dotdesktop/mb-applet-menu-launcher.desktop	2006-12-27 04:07:02.898665265 +0100
+@@ -1,7 +1,12 @@
+ [Desktop Entry]
++Encoding=UTF-8
+ Name=App Launcher
++Name[pl]=Uruchamianie aplikacji
+ Comment=Panel based Application Launcher
++Comment[pl]=Uruchamianie aplikacji z panelu
+ Exec=mb-applet-menu-launcher
+ Type=PanelApp
++Terminal=false
+ Icon=mbmenu.png
+-Categories=Panel;Utility;MB
++Categories=Applet;Utility;
++# vi:encoding=utf-8
+--- matchbox-panel-0.9.3/applets/dotdesktop/mb-applet-system-monitor.desktop.orig	2005-10-03 00:06:57.000000000 +0200
++++ matchbox-panel-0.9.3/applets/dotdesktop/mb-applet-system-monitor.desktop	2006-12-27 04:08:46.596574672 +0100
+@@ -1,7 +1,12 @@
+ [Desktop Entry]
++Encoding=UTF-8
+ Name=CPU/Mem Monitor
++Name[pl]=Monitor CPU/pamięci
+ Comment=Panel based CPU/Mem Monitor
++Comment[pl]=Siedzący w panelu monitor CPU/pamięci
+ Exec=mb-applet-system-monitor
+ Type=PanelApp
++Terminal=false
+ Icon=minisys.png
+-Categories=Panel;Utility;MB
++Categories=Applet;Utility;
++# vi:encoding=utf-8
+--- matchbox-panel-0.9.3/applets/dotdesktop/mb-applet-wireless.desktop.orig	2005-10-03 00:06:57.000000000 +0200
++++ matchbox-panel-0.9.3/applets/dotdesktop/mb-applet-wireless.desktop	2006-12-27 04:08:35.499942312 +0100
+@@ -1,7 +1,12 @@
+ [Desktop Entry]
++Encoding=UTF-8
+ Name=Wireless Monitor
++Name[pl]=Monitor sieci bezprzewodowej
+ Comment=Panel based wireless monitor
++Comment[pl]=Siedzący w panelu monitor sieci bezprzewodowej
+ Exec=mb-applet-wireless
+ Type=PanelApp
++Terminal=false
+ Icon=signal-81-100.png
+-Categories=Panel;Utility;MB
++Categories=Applet;Utility;
++# vi:encoding=utf-8
+--- matchbox-panel-0.9.3/applets/dotdesktop/mb-launcher-term.desktop.orig	2005-10-03 00:06:57.000000000 +0200
++++ matchbox-panel-0.9.3/applets/dotdesktop/mb-launcher-term.desktop	2006-12-27 04:09:48.380095515 +0100
+@@ -1,8 +1,13 @@
+ [Desktop Entry]
++Encoding=UTF-8
+ Name=Term Launcher
++Name[pl]=Uruchomienie terminala
+ Comment=Panel based Terminal launcher
++Comment[pl]=Uruchamianie terminala z panelu
+ # the '-o -1' makes monolaunch dock to the left
+ Exec=mb-applet-launcher -o -1 -l mbterm.png mb-applet-xterm-wrapper.sh
+ Type=PanelApp
++Terminal=false
+ Icon=mbterm.png
+-Categories=Panel;Utility;MB
++Categories=Applet;Utility;
++# vi:encoding=utf-8
