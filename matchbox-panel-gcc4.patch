@@ -1,0 +1,11 @@
+--- matchbox-panel-0.9.3/applets/mb-applet-battery.c.orig	2006-02-07 23:27:24.000000000 +0100
++++ matchbox-panel-0.9.3/applets/mb-applet-battery.c	2006-12-27 04:25:25.289486938 +0100
+@@ -177,7 +177,7 @@
+ 		unsigned long	present_rate;
+ 	};
+ 
+-	static int
++	int
+ 	line_parse(char *line, struct entry *e)
+ 	{
+ 		char *ptr;
