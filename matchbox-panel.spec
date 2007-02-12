@@ -4,7 +4,7 @@
 %bcond_without	wifi	# wireless applet
 #
 Summary:	Matchbox Panel
-Summary(pl):	Panel dla ¶rodowiska Matchbox
+Summary(pl.UTF-8):   Panel dla Å›rodowiska Matchbox
 Name:		matchbox-panel
 Version:	0.9.3
 Release:	1
@@ -26,20 +26,20 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Matchbox Panel.
 
-%description -l pl
-Panel dla ¶rodowiska Matchbox.
+%description -l pl.UTF-8
+Panel dla Å›rodowiska Matchbox.
 
 %package wireless
 Summary:	Panel based wireless monitor
-Summary(pl):	Siedz±cy w panelu monitor sieci bezprzewodowej
+Summary(pl.UTF-8):   SiedzÄ…cy w panelu monitor sieci bezprzewodowej
 Group:		X11/Applications
 Requires:	%{name} = %{version}-%{release}
 
 %description wireless
 Panel based wireless monitor.
 
-%description wireless -l pl
-Siedz±cy w panelu monitor sieci bezprzewodowej.
+%description wireless -l pl.UTF-8
+SiedzÄ…cy w panelu monitor sieci bezprzewodowej.
 
 %prep
 %setup -q
