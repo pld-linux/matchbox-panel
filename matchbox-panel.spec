@@ -4,7 +4,7 @@
 %bcond_without	wifi	# wireless applet
 #
 Summary:	Matchbox Panel
-Summary(pl.UTF-8):   Panel dla środowiska Matchbox
+Summary(pl.UTF-8):	Panel dla środowiska Matchbox
 Name:		matchbox-panel
 Version:	0.9.3
 Release:	1
@@ -31,7 +31,7 @@ Panel dla środowiska Matchbox.
 
 %package wireless
 Summary:	Panel based wireless monitor
-Summary(pl.UTF-8):   Siedzący w panelu monitor sieci bezprzewodowej
+Summary(pl.UTF-8):	Siedzący w panelu monitor sieci bezprzewodowej
 Group:		X11/Applications
 Requires:	%{name} = %{version}-%{release}
 
