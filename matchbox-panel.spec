@@ -15,7 +15,7 @@ Source0:	http://projects.o-hand.com/matchbox/sources/matchbox-panel/0.9/%{name}-
 Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-gcc4.patch
 URL:		http://projects.o-hand.com/matchbox/
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 %{?with_wifi:BuildRequires:	libiw-devel}
 BuildRequires:	libmatchbox-devel >= 1.6
 BuildRequires:	pkgconfig
