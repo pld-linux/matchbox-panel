@@ -7,13 +7,14 @@ Summary:	Matchbox Panel
 Summary(pl.UTF-8):	Panel dla środowiska Matchbox
 Name:		matchbox-panel
 Version:	0.9.3
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://projects.o-hand.com/matchbox/sources/matchbox-panel/0.9/%{name}-%{version}.tar.bz2
 # Source0-md5:	56d1807636f3919e22e51896ab7ccd2e
 Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-gcc4.patch
+Patch2:		libm.patch
 URL:		http://projects.o-hand.com/matchbox/
 BuildRequires:	gettext-tools
 %{?with_wifi:BuildRequires:	libiw-devel}
@@ -45,8 +46,14 @@ Siedzący w panelu monitor sieci bezprzewodowej.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
+%{__libtoolize}
+%{__aclocal}
+%{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure \
 	--enable-acpi-linux \
 	--enable-dnotify \
