@@ -1,0 +1,11 @@
+--- matchbox-panel-2.0/matchbox-panel/mb-panel-scaling-image.c.orig	2008-02-21 19:02:10.000000000 +0100
++++ matchbox-panel-2.0/matchbox-panel/mb-panel-scaling-image.c	2019-01-27 09:22:19.851853959 +0100
+@@ -289,7 +289,7 @@
+                 } else
+                         g_object_unref (pixbuf);
+         } else {
+-                g_warning (error->message);
++                g_warning ("%s", error->message);
+ 
+                 g_error_free (error);
+         }

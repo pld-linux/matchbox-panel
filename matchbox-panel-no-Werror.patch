@@ -1,0 +1,62 @@
+--- matchbox-panel-2.0/matchbox-panel/Makefile.am.orig	2008-01-17 22:45:15.000000000 +0100
++++ matchbox-panel-2.0/matchbox-panel/Makefile.am	2019-01-27 09:23:32.448519793 +0100
+@@ -1,8 +1,8 @@
+ AM_CPPFLAGS=-DPKGDATADIR=\"$(pkgdatadir)\" \
+             -DGETTEXT_PACKAGE=\"matchbox-panel\" \
+ 	    -DDEFAULT_APPLET_PATH=\"$(pkglibdir)\"
+-AM_CFLAGS = -Wall -g $(MATCHBOX_PANEL_CFLAGS) \
+-	    -I$(top_srcdir) -I$(top_builddir) -Werror
++AM_CFLAGS = -Wall $(MATCHBOX_PANEL_CFLAGS) \
++	    -I$(top_srcdir) -I$(top_builddir)
+ 
+ matchbox_panelincdir = $(pkgincludedir)
+ 
+--- matchbox-panel-2.0/applets/brightness/Makefile.am.orig	2008-02-04 11:14:46.000000000 +0100
++++ matchbox-panel-2.0/applets/brightness/Makefile.am	2019-01-27 09:25:10.025185348 +0100
+@@ -3,8 +3,8 @@
+ AM_CPPFLAGS=-DPKGDATADIR=\"$(pkgdatadir)\" \
+             -DGETTEXT_PACKAGE=\"matchbox-panel\" \
+ 	    -DDATADIR=\"$(pkgdatadir)/brightness/\"
+-AM_CFLAGS = -Wall -g $(MATCHBOX_PANEL_CFLAGS) \
+-	    -I$(top_srcdir) -I$(top_builddir) -Werror
++AM_CFLAGS = -Wall $(MATCHBOX_PANEL_CFLAGS) \
++	    -I$(top_srcdir) -I$(top_builddir)
+ 
+ appletdir = $(pkglibdir)
+ applet_LTLIBRARIES = libbrightness.la
+--- matchbox-panel-2.0/applets/notify/Makefile.am.orig	2008-02-02 16:41:44.000000000 +0100
++++ matchbox-panel-2.0/applets/notify/Makefile.am	2019-01-27 09:26:13.408517960 +0100
+@@ -1,6 +1,6 @@
+ AM_CPPFLAGS=-DPKGDATADIR=\"$(pkgdatadir)\" -DGETTEXT_PACKAGE=\"matchbox-panel\"
+-AM_CFLAGS = -Wall -g $(MATCHBOX_PANEL_CFLAGS) $(DBUS_CFLAGS) \
+-	    -I$(top_srcdir) -I$(top_builddir) -Werror
++AM_CFLAGS = -Wall $(MATCHBOX_PANEL_CFLAGS) $(DBUS_CFLAGS) \
++	    -I$(top_srcdir) -I$(top_builddir)
+ 
+ appletdir = $(pkglibdir)
+ applet_LTLIBRARIES = libnotify.la
+--- matchbox-panel-2.0/applets/startup/Makefile.am.orig	2008-01-17 22:45:16.000000000 +0100
++++ matchbox-panel-2.0/applets/startup/Makefile.am	2019-01-27 10:25:45.228477175 +0100
+@@ -3,8 +3,8 @@
+ AM_CPPFLAGS=-DPKGDATADIR=\"$(pkgdatadir)\" \
+             -DGETTEXT_PACKAGE=\"matchbox-panel\" \
+ 	    -DDATADIR=\"$(pkgdatadir)/startup/\"
+-AM_CFLAGS = -Wall -g $(MATCHBOX_PANEL_CFLAGS) \
+-	    -I$(top_srcdir) -I$(top_builddir) -Werror \
++AM_CFLAGS = -Wall $(MATCHBOX_PANEL_CFLAGS) \
++	    -I$(top_srcdir) -I$(top_builddir) \
+ 		$(SN_CFLAGS)
+ 
+ appletdir = $(pkglibdir)
+--- matchbox-panel-2.0/applets/startup-notify/Makefile.am.orig	2008-02-18 18:23:30.000000000 +0100
++++ matchbox-panel-2.0/applets/startup-notify/Makefile.am	2019-01-27 10:28:45.728475115 +0100
+@@ -1,7 +1,7 @@
+ AM_CPPFLAGS=-DPKGDATADIR=\"$(pkgdatadir)\" \
+ 	-DGETTEXT_PACKAGE=\"matchbox-panel\"
+-AM_CFLAGS = -Wall -g $(MATCHBOX_PANEL_CFLAGS) \
+-	-I$(top_srcdir) -I$(top_builddir) -Werror \
++AM_CFLAGS = -Wall $(MATCHBOX_PANEL_CFLAGS) \
++	-I$(top_srcdir) -I$(top_builddir) \
+ 	$(SN_CFLAGS) $(DBUS_CFLAGS)
+ 
+ appletdir = $(pkglibdir)

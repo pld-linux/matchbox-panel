@@ -1,0 +1,29 @@
+--- matchbox-panel-2.0/applets/showdesktop/showdesktop.c.orig	2008-06-19 18:08:19.000000000 +0200
++++ matchbox-panel-2.0/applets/showdesktop/showdesktop.c	2019-01-27 10:22:16.578479555 +0100
+@@ -57,7 +57,7 @@
+ 
+ /* Sync @applet with the _NET_SHOWING_DESKTOP root window property */
+ static void
+-sync (ShowDesktopApplet *applet)
++sync_applet (ShowDesktopApplet *applet)
+ {
+         GdkDisplay *display;
+         Atom type;
+@@ -103,7 +103,7 @@
+         if (xev->type == PropertyNotify) {
+                 if (xev->xproperty.atom == applet->atom) {
+                         /* _NET_SHOWING_DESKTOP changed */
+-                        sync (applet);
++                        sync_applet (applet);
+                 }
+         }
+ 
+@@ -145,7 +145,7 @@
+                                applet);
+ 
+         /* Sync */
+-        sync (applet);
++        sync_applet (applet);
+ }
+ 
+ /* Button clicked */
